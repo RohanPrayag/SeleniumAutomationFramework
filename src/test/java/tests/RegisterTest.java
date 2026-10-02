@@ -82,6 +82,7 @@ public class RegisterTest extends BaseClass {
         String expectedMessage = "Your Account Has Been not Created!";
         // Compares actual and expected messages
         Assert.assertEquals(actualMessage, expectedMessage);
+        System.out.println("jenkins");
     }
 }
     
