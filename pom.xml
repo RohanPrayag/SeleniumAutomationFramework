@@ -58,13 +58,21 @@
                 </configuration>
             </plugin>
 
-            <!-- Run TestNG tests using Maven -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.0</version>
-            </plugin>
+           <!-- Run TestNG tests using Maven -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.3.0</version>
 
+    <configuration>
+
+        <!-- Tell Maven to run our TestNG suite -->
+        <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+
+    </configuration>
+</plugin>
         </plugins>
     </build>
 
