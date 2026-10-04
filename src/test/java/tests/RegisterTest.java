@@ -79,7 +79,7 @@ public class RegisterTest extends BaseClass {
         // Gets success message from Registration page
         String actualMessage = registerPage.getSuccessMessage();
         // Expected successful registration message
-        String expectedMessage = "Your Account Has Been Created!";
+        String expectedMessage = "Your Account Has not Been Created!";
         // Compares actual and expected messages
         Assert.assertEquals(actualMessage, expectedMessage);
         System.out.println("jenkins");
